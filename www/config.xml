@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "org.coenraets.employeedirectory"
+        versionCode = "1"
+        version     = "1.0">
+ 
+    <name>Balducci Mobile</name>
+    <description>
+        Order from your smartphone!
+    </description>
+    <author href="https://www.facebook.com/jacob.dorpinghaus.50" email="jacob.dorpinghaus@gmail.com">
+        Jacob Dorpinghaus
+    </author>
+ 
+    <gap:splash src="splash.png" />
+    <icon src="icon.png" />
+    
+    <feature name="http://api.phonegap.com/1.0/camera"/>
+    <feature name="http://api.phonegap.com/1.0/contacts"/>
+    <feature name="http://api.phonegap.com/1.0/file"/>
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/media"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <feature name="http://api.phonegap.com/1.0/notification"/>
+    <gap:plugin name="nl.x-services.plugins.toast" version="2.0" />
+ 
+</widget>

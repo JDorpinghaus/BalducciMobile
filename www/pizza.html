@@ -1,0 +1,45 @@
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+<body>
+
+<div class='header'>
+    <img src="img/glass.png">
+    <img src="img/BalducciMobile.png">
+    <img src="img/glass.png">
+</div>
+    
+<img class="cover" src="img/pizzacover.png">
+    
+    <div class="listcontainer">
+        <ul>
+        <li><img src="img/1.png"><h3>Pepperoni Pizza</h3>
+            <input type="radio" name="pepperonipizza" value="12" checked="checked">12"<br>
+            <input type="radio" name="pepperonipizza" value="14">14"<br>
+            <input type="image" class="cart" src="img/cart.png" onClick="window.plugins.toast.showShortCenter('Item added to cart.')">
+        </li>
+        </ul>
+        
+        <ul>
+        <li><img src="img/2.png"><h3>Special Pizza</h3>
+            <input type="radio" name="specialpizza" value="12" checked="checked">12"<br>
+            <input type="radio" name="specialpizza" value="14">14"<br>
+            <input type="image" class="cart" src="img/cart.png" onClick="#">
+        </li>
+        </ul>   
+        
+        <ul>
+        <li><img src="img/3.png"><h3>Meatlovers Pizza</h3>
+            <input type="radio" name="meatloverspizza" value="12" checked="checked">12"<br>
+            <input type="radio" name="meatloverspizza" value="14">14"<br>
+            <input type="image" class="cart" src="img/cart.png" onClick="#">
+        </li>
+        </ul>   
+    </div>
+    
+<script src="js/menu.js"></script>
+<script src="cordova.js"></script>
+    
+</body>
+</html>
