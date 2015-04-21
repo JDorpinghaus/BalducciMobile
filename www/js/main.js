@@ -1,4 +1,4 @@
-function addToCart(item)
+function addToCart(event)
     {
     if (localStorage.getItem('items') === null)
         {   
@@ -8,15 +8,37 @@ function addToCart(item)
         {
         items = JSON.parse(localStorage.getItem('items'));
         }
-    items.push(item);
+    items.push('item');
     localStorage.setItem('items', JSON.stringify(items));
+    document.getElementById('test').innerHTML = event.target.value;
     window.plugins.toast.showShortBottom('Item added to cart');
     }
 
-var elements = document.getElementsByClassName('cart');
-document.getElementById('test').innerHTML = [].slice.call(elements);
+function updatePrice(event)
+    {
+    if (event.target.value == 12)
+        {
+        document.getElementById('price').innerHTML = '$10.00';
+        }
+    else
+        {
+        document.getElementById('price').innerHTML = '$12.00';
+        }
+    }
 
+
+var elements = document.getElementsByClassName('cart');
 for (var i=0;i<elements.length;i++)
     {
-    elements[i].addEventListener('click', addToCart('testitem'), false);
+    elements[i].addEventListener('click', addToCart, false);
+    }
+
+var elements = document.getElementsByTagName('input');
+for (var i=0;i<elements.length;i++)
+    {
+    if (elements[i].nodeType == 'radio')
+        {
+        document.getElementById('test').innerHTML = elements[i];
+        elements[i].addEventListener('click', updatePrice, false);
+        }
     }
