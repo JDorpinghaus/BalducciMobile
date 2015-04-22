@@ -1,6 +1,6 @@
-function addToCart(item)
+function removeFromCart(event)
     {
     items = JSON.parse(LocalStorage.getItem('items'));
-    items.push(item);
+        
     localStorage.setItem('items', items)
     }
