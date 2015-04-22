@@ -1,7 +1,17 @@
+@font-face { 
+	font-family: 'WebFont';
+	src: url('font/Caviar.eot');
+	src: url('font/Caviar.eot?iefix') format('eot'),
+	     url('font/Caviar.woff') format('woff'),
+	     url('font/Caviar.ttf') format('truetype'),
+	     url('font/Caviar.svg#webfont') format('svg');
+}
+
 body {
     height: 100%;
     margin:0px;
     overflow: scroll;
+    background: radial-gradient(#c75463, #59121b);
 }
 
 .header {
@@ -22,23 +32,27 @@ table {
 }
 
 h1 {
+    font-family: 'WebFont', Caviar, sans-serif;
     margin: 0px;
     font-size: 100%;
 }
 
 h2 {
+    font-family: 'WebFont', Caviar, sans-serif;
     margin: 20px;
     padding: 5px;
 }
 
 h3 {
+    font-family: 'WebFont', Caviar, sans-serif;
     margin:5px;
     padding:0px;
-    flex: 1 1;
+    flex: 3;
     font-size: 125%;
 }
 
 h4 {
+    font-family: 'WebFont', Caviar, sans-serif;
     margin:10px;
 }
 
@@ -59,6 +73,25 @@ li {
     align-items: center;
 }
 
+.options {
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .cart {
 
+}
+
+.optioncontainer {
+    display: flex;
+    flex-direction: row;
 }

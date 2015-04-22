@@ -5,35 +5,40 @@
 <body>
 
 <div class='header'>
+    <input type="image" src="img/home.png" onclick="location.href='index.html';" style="padding-right: 10px;">
     <img src="img/glass.png">
     <img src="img/BalducciMobile.png">
     <img src="img/glass.png">
+    <img src="img/viewcart.png" onclick="location.href='cart.html';" style="padding-left: 10px;">
 </div>
     
 <img class="cover" src="img/saladcover.png">
     
     <div class="listcontainer">
         <ul>
-        <li><img src="img/1.png"><h3>Pepperoni Pizza</h3>
-            <input type="radio" name="pepperonipizza" value="12" checked="checked">12"<br>
-            <input type="radio" name="pepperonipizza" value="14">14"<br>
-            <input type="image" class="cart" src="img/cart.png" onClick="window.plugins.toast.showShortCenter('Item added to cart.')">
+        <li><img src="img/7.png"><h3>Combination Salad</h3>
+            <div class="buy">
+                <input type="image" class="cart" src="img/cart.png">
+                <h4 id="pepperonipizzaprice">$7.00</h4>
+            </div>
         </li>
         </ul>
         
         <ul>
-        <li><img src="img/2.png"><h3>Special Pizza</h3>
-            <input type="radio" name="specialpizza" value="12" checked="checked">12"<br>
-            <input type="radio" name="specialpizza" value="14">14"<br>
-            <input type="image" class="cart" src="img/cart.png" onClick="#">
+        <li><img src="img/8.png"><h3>Grilled Chicken Salad</h3>
+            <div class="buy">
+                <input type="image" class="cart" src="img/cart.png">
+                <h4 id="pepperonipizzaprice">$10.00</h4>
+            </div>
         </li>
         </ul>   
         
         <ul>
-        <li><img src="img/3.png"><h3>Meatlovers Pizza</h3>
-            <input type="radio" name="meatloverspizza" value="12" checked="checked">12"<br>
-            <input type="radio" name="meatloverspizza" value="14">14"<br>
-            <input type="image" class="cart" src="img/cart.png" onClick="#">
+        <li><img src="img/9.png"><h3>Italian Salad</h3>
+            <div class="buy">
+                <input type="image" class="cart" src="img/cart.png">
+                <h4 id="pepperonipizzaprice">$10.00</h4>
+            </div>
         </li>
         </ul>   
     </div>
