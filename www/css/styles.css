@@ -7,11 +7,16 @@
 	     url('font/Caviar.svg#webfont') format('svg');
 }
 
+*:focus  
+{  
+    outline: none;  
+}  
+
 body {
     height: 100%;
     margin:0px;
     overflow: scroll;
-    background: radial-gradient(#c75463, #59121b);
+    background: radial-gradient(#f0a6af, #95303d);
 }
 
 .header {
